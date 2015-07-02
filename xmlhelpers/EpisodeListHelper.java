@@ -1,4 +1,4 @@
-package tvRage;
+package tvrage.xmlhelpers;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import tvrage.model.Episode;
 
 /**
  * <p>Helper class to assist in de-serializing XML format.</p>

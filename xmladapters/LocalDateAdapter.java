@@ -1,4 +1,4 @@
-package tvRage;
+package tvrage.xmladapters;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 

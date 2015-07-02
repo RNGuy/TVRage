@@ -1,4 +1,4 @@
-package tvRage;
+package tvrage;
 
 import java.net.SocketTimeoutException;
 
@@ -13,10 +13,16 @@ import javax.ws.rs.core.Response;
 import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.client.ClientProperties;
 
+import tvrage.model.Episode;
+import tvrage.model.Show;
+
+import tvrage.xmlhelpers.EpisodeListHelper;
+import tvrage.xmlhelpers.SearchResultHelper;
+
 /**
  * @author Aaron Hannah
  * @version 1.0
- * 
+ *
  * <p>This provides access to the TVRage public API for television shows. At this time,
  * it only provides 3 functions: Searching for a show, getting show information, and
  * getting a list of episodes for a show.</p>
@@ -34,7 +40,7 @@ public class TVRageAPI {
         WebTarget target = client.target("http://services.tvrage.com/feeds");
         
         Response response = target.path("search.php").queryParam("show", search).request().accept(MediaType.APPLICATION_XML).get(Response.class);
-        SearchResult results = response.readEntity(SearchResult.class);
+        SearchResultHelper results = response.readEntity(SearchResultHelper.class);
         return results.getResults();
     }
     

@@ -1,4 +1,4 @@
-package tvRage;
+package tvrage.model;
 
 import java.io.Serializable;
 
