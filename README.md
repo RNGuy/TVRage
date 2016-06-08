@@ -1,3 +1,7 @@
+#Deprecated
+##TVRage appears to be permanently down
+###I have written a new package utilizing TVMaze's API. Hope to post it soon.
+
 # TVRage
 <p>Java library for accessing the <a href="http://services.tvrage.com/info.php?page=main">TVRage public API</a>.</p>
 <p>Provides basic access to simple functions: searching for a show, getting show information and getting episode information.</p>
