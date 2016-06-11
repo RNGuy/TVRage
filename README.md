@@ -1,6 +1,7 @@
 #Deprecated
 ##TVRage appears to be permanently down
-###I have written a new package utilizing TVMaze's API. Hope to post it soon.
+###I have written a new package utilizing TVMaze's API.
+###Find it here - https://github.com/RNGuy/TVMaze
 
 __________________________________________________________________________________
 
